@@ -1,16 +1,21 @@
+body{
+    margin: 0px;
+}
+
 /* task 2.1 part1*/
 #section1{
     background-color: rgb(245, 240, 230);
     display: inline-block; /* task 2.2 */
     width: 100%;
+    max-width: 100%;
 }
 
 
 /* task 2.1 part2*/
 #section2 {
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
-    display: inline-block; 
-    width: 100%
+    display: inline-block;
+    max-width: 100%;
 }
 #section2 h2, #section2 p {
 	color: white;
@@ -29,24 +34,35 @@ ul {
 
 
 }
+
 ul a {
-    display: inline;
+    display: none;
     font-size: 28px; /* navbar item */
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
+
 ul a:hover {
     background-color: #182b49;
     color: white;
-  }
+}
   
 li {
 display: inline;
 }
 
 #navlogo {
-    max-width: 400px;
+    /* max-width: 400px; */
+    max-width: 75%;
 }
+
+head {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
 /* li a {
     display: block;
     padding: 8px;
@@ -66,13 +82,14 @@ display: inline;
     background-color: rgb(245, 240, 230);
     display: inline-block;  /* task 2.2 */
     width: 100%;
+    max-width: 100%;
 }
 
 
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
     background-color: rgb(245, 240, 230);
     gap: 25px;
@@ -118,3 +135,9 @@ color: white;
 max-height: 500px;
 }
 
+
+@media screen and (min-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
